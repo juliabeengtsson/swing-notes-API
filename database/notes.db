@@ -1,2 +1,4 @@
 {"type":"note","title":"anteckning 1","text":"hej julia","createdAt":{"$$date":1714738130469},"modifiedAt":{"$$date":1714738130469},"_id":"DJ84bzFMstKgIv07"}
-{"type":"note","title":"anteckning julia uppdatera","text":"hello 2 update","createdAt":{"$$date":1715077739868},"modifiedAt":{"$$date":1715077902730},"_id":"Ouo5lGs5uXZPyCos"}
+{"type":"user","username":"juliabengt","password":"$2b$10$4FnmhJGhAx7fXZYkgDFwhesVQoU/Jr5ZXrGt/Fe4GFx6T5up11TXG","_id":"Vh4vcWXqP1sS8RYB"}
+{"type":"user","username":"1234567","password":"$2b$10$/a4PVmvEqk5YIWhBUbLKS.MIB.ayeu0qEmbaQ8dr/Sk3r2NLcbBNG","_id":"boQkDqOG8TLsmQhi"}
+{"type":"note","title":"här är en ny note","text":"hello 2 update","createdAt":{"$$date":1715081032675},"modifiedAt":{"$$date":1715081032675},"_id":"fDkuUE62CsSShsfp"}

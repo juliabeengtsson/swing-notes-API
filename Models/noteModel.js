@@ -2,6 +2,18 @@ const db = require('../database/database');
 
 class Note {
 
+    static getNotes() {
+        return new Promise((resolve, reject) => {
+            db.find({ type: 'note' }, (err, docs) => {
+                if(err) {
+                    reject(err)
+                } else {
+                    resolve(docs)
+                }
+            })
+        })
+    }
+
     static createNote(noteData) {
         return new Promise((resolve, reject) => {
             const note = {
@@ -34,6 +46,18 @@ class Note {
                     reject(err)
                 } else {
                     resolve({ _id: id, ...updates })
+                }
+            })
+        })
+    }
+
+    static deleteNote(id) {
+        return new Promise((resolve, reject) => {
+            db.remove({ _id: id }, {multi: false}, (err, numRemoved) => {
+                if (err) {
+                    reject(err)
+                } else {
+                    resolve(numRemoved);
                 }
             })
         })
